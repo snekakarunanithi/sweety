@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <h2 class="text-center jumbotron bold font">EMPLOYEE MANAGEMENT</h2>
+    <div class="w3-panel w3-card-4">
+        <div class="container">
+            <div class="row">
+                <!-- Profile Section for Each Employee -->
+
+                <div class="col-sm-3">
+                    <div class="panel panel-success">
+                        <div class="w3-panel w3-card-4">
+                            <div class="panel-heading text-center">Miss. Sahana</div>
+                            <div class="panel-body">
+                                <center>
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-name="Miss. Sahana" data-role="Full Stack Developer" data-email="sahana@gmail.com" data-phone="9876757867" data-location="123/32, Perambalur" data-about="Passionate about coding and learning new technologies. Always looking to improve my skills and contribute to exciting projects.">
+                                        <img src="p0.jpeg" class="img-responsive" alt="Profile of Miss Sahana">
+                                    </button>
+                                </center>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="submit" class="btn btn-block btn-success">FULL STACK DEVELOPER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for other profiles -->
+                <div class="col-sm-3">
+                    <div class="panel panel-success">
+                        <div class="w3-panel w3-card-4">
+                            <div class="panel-heading text-center">Miss. Saratha</div>
+                            <div class="panel-body">
+                                <center>
+                                    <a href="know.html" target="_blank"><img src="p1.jpeg" class="img-responsive" alt="Profile of Miss Saratha"></a>
+                                </center>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="submit" class="btn btn-block btn-success">WEB DEVELOPER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat similar blocks for other profiles -->
+
+            </div>
+
+            <!-- Modal for displaying employee information -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Personal Information</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h1>Personal Information</h1>
+                            <h3><b>NAME:</b> <span id="modal-name">Miss. Sahana</span></h3>
+                            <p><b>JOB ROLE:</b> <span id="modal-role">Full Stack Developer</span></p>
+                            <p><b>EMAIL:</b> <span id="modal-email">sahana@gmail.com</span></p>
+                            <p><b>PHONE:</b> <span id="modal-phone">9876757867</span></p>
+                            <p><b>LOCATION:</b> <span id="modal-location">123/32, Perambalur</span></p>
+                            <p><b>ABOUT ME:</b> <span id="modal-about">Passionate about coding and learning new technologies. Always looking to improve my skills and contribute to exciting projects.</span></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <i style="font-size:24px" class="fa">&#xf230;</i>
+                        <i style="font-size:24px" class="fa">&#xf08c;</i>
+                        <i style="font-size:24px" class="fa">&#xf081;</i>
+                        <i style="font-size:24px" class="fa">&#xf1a0;</i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        123 INDIA FLOTE Company Street, <br>
+                        City, Country<br>
+                        Email: info@company.com<br>
+                        Phone: (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 India Flote LIMITED COMPANY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons a {
+            font-size: 20px;
+            margin-right: 15px;
+            color: black;
+        }
+        .footer .social-icons a:hover {
+            color: rgb(22, 20, 20);
+        }
+    </style>
+
+    <script>
+        // JavaScript to handle dynamic modal content based on the employee clicked
+        $('#myModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var name = button.data('name');
+            var role = button.data('role');
+            var email = button.data('email');
+            var phone = button.data('phone');
+            var location = button.data('location');
+            var about = button.data('about');
+
+            // Update the modal content
+            $('#modal-name').text(name);
+            $('#modal-role').text(role);
+            $('#modal-email').text(email);
+            $('#modal-phone').text(phone);
+            $('#modal-location').text(location);
+            $('#modal-about').text(about);
+        });
+    </script>
+
+</body>
+</html>
